@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.clinicamedica;
+package com.mycompany.clinicamedica.agendamento;
 
 import javax.swing.JOptionPane;
 
@@ -40,15 +40,11 @@ public class TelaLoginAgendamento extends javax.swing.JFrame {
         labelSenha = new javax.swing.JLabel();
         txtSenha = new javax.swing.JPasswordField();
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Desktop\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
-
         jToggleButton2.setText("jToggleButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         TelaLogin.setBackground(new java.awt.Color(2, 115, 115));
-
-        LogoClinica.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Desktop\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
 
         txtLembrar.setText("Lembrar-me");
         txtLembrar.addActionListener(new java.awt.event.ActionListener() {

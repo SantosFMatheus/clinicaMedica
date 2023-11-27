@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.clinicamedica;
+package com.mycompany.clinicamedica.agendamento;
 
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
@@ -56,10 +56,6 @@ public class Agendamento extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(2, 115, 115));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Downloads\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Downloads\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

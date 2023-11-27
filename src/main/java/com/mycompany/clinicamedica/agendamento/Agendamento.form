@@ -178,20 +178,10 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Gabri\Downloads\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png"/>
-            </Property>
-          </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\Gabri\Downloads\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png"/>
-            </Property>
-          </Properties>
         </Component>
       </SubComponents>
     </Container>
