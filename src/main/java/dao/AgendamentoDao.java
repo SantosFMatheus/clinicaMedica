@@ -29,7 +29,6 @@ public class AgendamentoDao {
        private static Connection conn;
        public static Connection getAgendamentoDao(){
            
-           return null;
            try{
            if(conn == null){
            }else {
@@ -45,7 +44,10 @@ public class AgendamentoDao {
            return null;
            
        }
-       
+       catch (Exception exc) {
+          Logger.getLogger(AgendamentoDao.class.getName()).log(Level.SEVERE, null, exc); 
+       }
+           return null;
     }
 }
 
