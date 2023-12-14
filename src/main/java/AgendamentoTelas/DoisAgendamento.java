@@ -9,6 +9,7 @@ import AdministrativoTelas.CadastroEspecialidade;
 import AdministrativoTelas.CadastroFuncionarios;
 import AdministrativoTelas.CadastroMedicos;
 import AdministrativoTelas.CadastroUsuarios;
+import com.mycompany.clinicamedica.atendimento.Historico_do_paciente;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -55,17 +56,10 @@ public class DoisAgendamento extends javax.swing.JFrame {
         menuCancelamentoConsulta = new javax.swing.JMenuItem();
         txtAtendimento = new javax.swing.JMenu();
         menuProntuarioPaciente = new javax.swing.JMenuItem();
-        menuRegistroAtendimento = new javax.swing.JMenuItem();
-        menuReceituario = new javax.swing.JMenuItem();
-        menuExames = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(2, 115, 115));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Downloads\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Downloads\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
 
         btnSairAgendamento.setText("SAIR");
         btnSairAgendamento.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +89,7 @@ public class DoisAgendamento extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(976, Short.MAX_VALUE)
                         .addComponent(jLabel3)
                         .addGap(206, 206, 206))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -195,16 +189,12 @@ public class DoisAgendamento extends javax.swing.JFrame {
         txtAtendimento.setText("Atendimento");
 
         menuProntuarioPaciente.setText("Prontuário do Paciente");
+        menuProntuarioPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                coisa(evt);
+            }
+        });
         txtAtendimento.add(menuProntuarioPaciente);
-
-        menuRegistroAtendimento.setText("Registro de Atendimento");
-        txtAtendimento.add(menuRegistroAtendimento);
-
-        menuReceituario.setText("Receituário");
-        txtAtendimento.add(menuReceituario);
-
-        menuExames.setText("Exames");
-        txtAtendimento.add(menuExames);
 
         jMenuBar2.add(txtAtendimento);
 
@@ -219,7 +209,7 @@ public class DoisAgendamento extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 60, Short.MAX_VALUE))
         );
 
@@ -235,10 +225,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
         final UmTelaLoginAgendamento reexibir = new UmTelaLoginAgendamento();
         this.dispose();
         reexibir.setVisible(true);
-
-        TresCadastroDePaciente novaTela = new TresCadastroDePaciente();
-        this.dispose();
-        novaTela.setVisible(true);
     }//GEN-LAST:event_btnSairAgendamentoActionPerformed
 
     private void txtAgendamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAgendamentoActionPerformed
@@ -276,6 +262,10 @@ public class DoisAgendamento extends javax.swing.JFrame {
     private void menuCadastroConveniosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastroConveniosActionPerformed
         new CadastroConvenios().setVisible(true);
     }//GEN-LAST:event_menuCadastroConveniosActionPerformed
+
+    private void coisa(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coisa
+        new Historico_do_paciente().setVisible(true);
+    }//GEN-LAST:event_coisa
 
     /**
      * @param args the command line arguments
@@ -329,10 +319,7 @@ public class DoisAgendamento extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuCadastroPaciente;
     private javax.swing.JMenuItem menuCadastroUsuarios;
     private javax.swing.JMenuItem menuCancelamentoConsulta;
-    private javax.swing.JMenuItem menuExames;
     private javax.swing.JMenuItem menuProntuarioPaciente;
-    private javax.swing.JMenuItem menuReceituario;
-    private javax.swing.JMenuItem menuRegistroAtendimento;
     private javax.swing.JMenuItem menuRegistroRetorno;
     private javax.swing.JMenu txtAdministrativo;
     private javax.swing.JMenu txtAgendamento;

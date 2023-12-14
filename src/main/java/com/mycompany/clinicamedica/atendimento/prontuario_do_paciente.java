@@ -36,15 +36,16 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        btnSalvar5 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        btnSalvar3 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         btnSalvar4 = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
         btnSalvar6 = new javax.swing.JButton();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
+        btnSalvar3 = new javax.swing.JButton();
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -82,20 +83,33 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        btnSalvar5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnSalvar5.setText("VOLTAR");
+        btnSalvar5.setEnabled(false);
+        btnSalvar5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvar5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(182, 182, 182)
-                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 422, Short.MAX_VALUE)
-                .addGap(197, 197, 197))
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
+                .addGap(116, 116, 116)
+                .addComponent(btnSalvar5)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSalvar5)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -106,15 +120,6 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
-            }
-        });
-
-        btnSalvar3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnSalvar3.setText("SALVAR");
-        btnSalvar3.setEnabled(false);
-        btnSalvar3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalvar3ActionPerformed(evt);
             }
         });
 
@@ -156,6 +161,15 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
             }
         });
 
+        btnSalvar3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnSalvar3.setText("SALVAR");
+        btnSalvar3.setEnabled(false);
+        btnSalvar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvar3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -173,9 +187,9 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnSalvar3, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btnSalvar4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnSalvar6, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(btnSalvar6, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(btnSalvar3, javax.swing.GroupLayout.Alignment.TRAILING))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -188,7 +202,7 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSalvar3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -245,6 +259,10 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
+    private void btnSalvar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalvar5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -284,6 +302,7 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
     private javax.swing.JButton btnSalvar;
     private javax.swing.JButton btnSalvar3;
     private javax.swing.JButton btnSalvar4;
+    private javax.swing.JButton btnSalvar5;
     private javax.swing.JButton btnSalvar6;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;

@@ -4,6 +4,7 @@
  */
 package com.mycompany.clinicamedica.atendimento;
 
+import AgendamentoTelas.DoisAgendamento;
 import javax.swing.JOptionPane;
 
 /**
@@ -199,10 +200,13 @@ public class Historico_do_paciente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSalvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar1ActionPerformed
-        // TODO add your handling code here:
+        final DoisAgendamento reexibir = new DoisAgendamento();
+        this.dispose();
+        reexibir.setVisible(true);
     }//GEN-LAST:event_btnSalvar1ActionPerformed
 
     private void btnSalvar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar3ActionPerformed
+        new prontuario_do_paciente().setVisible(true);
         JOptionPane.showMessageDialog(null, "Salvou!!!!!");
     }//GEN-LAST:event_btnSalvar3ActionPerformed
 
