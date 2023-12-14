@@ -54,6 +54,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agenda de Consulta"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuAgendarConsultaActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="menuRegistroRetorno">
               <Properties>
@@ -76,21 +79,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Prontu&#xe1;rio do Paciente"/>
               </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="menuRegistroAtendimento">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Registro de Atendimento"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="menuReceituario">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Receitu&#xe1;rio"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="menuExames">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Exames"/>
-              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuProntuarioPacienteActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

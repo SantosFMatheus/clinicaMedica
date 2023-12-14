@@ -4,6 +4,8 @@
  */
 package com.mycompany.clinicamedica.atendimento;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -76,32 +78,17 @@ public class Historico_do_paciente extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(169, 217, 208));
         jLabel7.setText("USUÁRIO");
 
-        txtNome2.setBackground(new java.awt.Color(2, 115, 115));
-        txtNome2.setEnabled(false);
-
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(169, 217, 208));
         jLabel11.setText("CPF:");
-
-        txtNome7.setBackground(new java.awt.Color(2, 115, 115));
-        txtNome7.setEnabled(false);
-
-        txtNome3.setBackground(new java.awt.Color(2, 115, 115));
-        txtNome3.setEnabled(false);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(169, 217, 208));
         jLabel14.setText("DATA DE NASCIMENTO:");
 
-        txtNome1.setBackground(new java.awt.Color(2, 115, 115));
-        txtNome1.setEnabled(false);
-
         jLabel15.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(169, 217, 208));
         jLabel15.setText("IDADE:");
-
-        txtNome5.setBackground(new java.awt.Color(2, 115, 115));
-        txtNome5.setEnabled(false);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(169, 217, 208));
@@ -109,7 +96,6 @@ public class Historico_do_paciente extends javax.swing.JFrame {
 
         btnSalvar1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalvar1.setText("VOLTAR");
-        btnSalvar1.setEnabled(false);
         btnSalvar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvar1ActionPerformed(evt);
@@ -118,7 +104,6 @@ public class Historico_do_paciente extends javax.swing.JFrame {
 
         btnSalvar3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalvar3.setText("ACESSAR");
-        btnSalvar3.setEnabled(false);
         btnSalvar3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvar3ActionPerformed(evt);
@@ -151,9 +136,12 @@ public class Historico_do_paciente extends javax.swing.JFrame {
                                         .addComponent(jLabel15))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel8))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(txtNome2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel8)
+                                        .addGap(25, 25, 25)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7)
                                     .addComponent(txtNome3, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -215,7 +203,7 @@ public class Historico_do_paciente extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalvar1ActionPerformed
 
     private void btnSalvar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar3ActionPerformed
-        dao.AgendamentoDao.getAgendamentoDao();
+        JOptionPane.showMessageDialog(null, "Salvou!!!!!");
     }//GEN-LAST:event_btnSalvar3ActionPerformed
 
     /**

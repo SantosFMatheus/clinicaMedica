@@ -4,6 +4,7 @@
  */
 package AgendamentoTelas;
 
+import com.mycompany.clinicamedica.atendimento.Historico_do_paciente;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 
@@ -48,18 +49,11 @@ public class Agendamento extends javax.swing.JFrame {
         menuCancelamentoConsulta = new javax.swing.JMenuItem();
         txtAtendimento = new javax.swing.JMenu();
         menuProntuarioPaciente = new javax.swing.JMenuItem();
-        menuRegistroAtendimento = new javax.swing.JMenuItem();
-        menuReceituario = new javax.swing.JMenuItem();
-        menuExames = new javax.swing.JMenuItem();
         menuSair = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(2, 115, 115));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Downloads\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabri\\Downloads\\WhatsApp_Image_2023-11-16_at_21.55.29-removebg-preview.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -118,6 +112,11 @@ public class Agendamento extends javax.swing.JFrame {
         txtAgendamento.add(menuCadastroPaciente);
 
         menuAgendarConsulta.setText("Agenda de Consulta");
+        menuAgendarConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuAgendarConsultaActionPerformed(evt);
+            }
+        });
         txtAgendamento.add(menuAgendarConsulta);
 
         menuRegistroRetorno.setText("Registro de Retorno");
@@ -131,16 +130,12 @@ public class Agendamento extends javax.swing.JFrame {
         txtAtendimento.setText("Atendimento");
 
         menuProntuarioPaciente.setText("Prontuário do Paciente");
+        menuProntuarioPaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuProntuarioPacienteActionPerformed(evt);
+            }
+        });
         txtAtendimento.add(menuProntuarioPaciente);
-
-        menuRegistroAtendimento.setText("Registro de Atendimento");
-        txtAtendimento.add(menuRegistroAtendimento);
-
-        menuReceituario.setText("Receituário");
-        txtAtendimento.add(menuReceituario);
-
-        menuExames.setText("Exames");
-        txtAtendimento.add(menuExames);
 
         jMenuBar2.add(txtAtendimento);
 
@@ -179,6 +174,14 @@ new CadastrodePacientes().setVisible(true);
         // Menu Sair
         this.dispose();
     }//GEN-LAST:event_menuSairActionPerformed
+
+    private void menuProntuarioPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuProntuarioPacienteActionPerformed
+       new Historico_do_paciente().setVisible(true); 
+    }//GEN-LAST:event_menuProntuarioPacienteActionPerformed
+
+    private void menuAgendarConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAgendarConsultaActionPerformed
+        new AgendadeConsulta_1().setVisible(true);
+    }//GEN-LAST:event_menuAgendarConsultaActionPerformed
     
     /**
      * @param args the command line arguments
@@ -230,10 +233,7 @@ new CadastrodePacientes().setVisible(true);
     private javax.swing.JMenuItem menuCadastroPaciente;
     private javax.swing.JMenuItem menuCadastroUsuarios;
     private javax.swing.JMenuItem menuCancelamentoConsulta;
-    private javax.swing.JMenuItem menuExames;
     private javax.swing.JMenuItem menuProntuarioPaciente;
-    private javax.swing.JMenuItem menuReceituario;
-    private javax.swing.JMenuItem menuRegistroAtendimento;
     private javax.swing.JMenuItem menuRegistroRetorno;
     private javax.swing.JMenu menuSair;
     private javax.swing.JMenu txtAdministrativo;
