@@ -85,7 +85,6 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
 
         btnSalvar5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalvar5.setText("VOLTAR");
-        btnSalvar5.setEnabled(false);
         btnSalvar5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvar5ActionPerformed(evt);
@@ -129,7 +128,6 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
 
         btnSalvar4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalvar4.setText("SALVAR");
-        btnSalvar4.setEnabled(false);
         btnSalvar4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvar4ActionPerformed(evt);
@@ -142,7 +140,6 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
 
         btnSalvar6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalvar6.setText("SALVAR");
-        btnSalvar6.setEnabled(false);
         btnSalvar6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvar6ActionPerformed(evt);
@@ -163,7 +160,6 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
 
         btnSalvar3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSalvar3.setText("SALVAR");
-        btnSalvar3.setEnabled(false);
         btnSalvar3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSalvar3ActionPerformed(evt);
@@ -239,12 +235,12 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void btnSalvar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar3ActionPerformed
-         dao.AgendamentoDao.getAgendamentoDao();
-         JOptionPane.showMessageDialog(null, "Você clicou no botão!");
+
+         JOptionPane.showMessageDialog(null, "Salvo");
     }//GEN-LAST:event_btnSalvar3ActionPerformed
 
     private void btnSalvar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar4ActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Salvo");
     }//GEN-LAST:event_btnSalvar4ActionPerformed
 
     private void btnSalvar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar6ActionPerformed
@@ -260,7 +256,9 @@ public class prontuario_do_paciente extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void btnSalvar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvar5ActionPerformed
-        // TODO add your handling code here:
+        final Historico_do_paciente reexibir = new Historico_do_paciente ();
+        this.dispose();
+        reexibir.setVisible(true);
     }//GEN-LAST:event_btnSalvar5ActionPerformed
 
     /**
