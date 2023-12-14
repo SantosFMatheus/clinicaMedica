@@ -4,15 +4,13 @@
  */
 package AgendamentoTelas;
 
-import java.awt.event.ActionListener;
-
 /**
  *
  * @author Gabri
  */
-class Agendamento {
+class txtCodigoPacientes {
 
-    static void addActionListener(ActionListener actionListener) {
+    static int getText() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
