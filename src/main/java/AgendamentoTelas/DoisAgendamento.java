@@ -45,7 +45,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
         jMenuBar2 = new javax.swing.JMenuBar();
         txtAdministrativo = new javax.swing.JMenu();
         menuCadastroFuncionarios = new javax.swing.JMenuItem();
-        menuCadastroUsuarios = new javax.swing.JMenuItem();
         menuCadastroEspecialidades = new javax.swing.JMenuItem();
         menuCadastroMedicos = new javax.swing.JMenuItem();
         menuCadastroConvenios = new javax.swing.JMenuItem();
@@ -53,7 +52,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
         menuCadastroPaciente = new javax.swing.JMenuItem();
         menuAgendarConsulta = new javax.swing.JMenuItem();
         menuRegistroRetorno = new javax.swing.JMenuItem();
-        menuCancelamentoConsulta = new javax.swing.JMenuItem();
         txtAtendimento = new javax.swing.JMenu();
         menuProntuarioPaciente = new javax.swing.JMenuItem();
 
@@ -110,14 +108,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
             }
         });
         txtAdministrativo.add(menuCadastroFuncionarios);
-
-        menuCadastroUsuarios.setText("Cadastro de Usuários");
-        menuCadastroUsuarios.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuCadastroUsuariosActionPerformed(evt);
-            }
-        });
-        txtAdministrativo.add(menuCadastroUsuarios);
 
         menuCadastroEspecialidades.setText("Cadastro de Especialidades");
         menuCadastroEspecialidades.addActionListener(new java.awt.event.ActionListener() {
@@ -176,14 +166,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
         });
         txtAgendamento.add(menuRegistroRetorno);
 
-        menuCancelamentoConsulta.setText("Cancelamento de Consulta");
-        menuCancelamentoConsulta.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuCancelamentoConsultaActionPerformed(evt);
-            }
-        });
-        txtAgendamento.add(menuCancelamentoConsulta);
-
         jMenuBar2.add(txtAgendamento);
 
         txtAtendimento.setText("Atendimento");
@@ -239,18 +221,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
         new CincoRegistrodeRetorno().setVisible(true);
     }//GEN-LAST:event_menuRegistroRetornoActionPerformed
 
-    private void menuCancelamentoConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCancelamentoConsultaActionPerformed
-        new SeisCancelamentodeConsulta().setVisible(true);
-    }//GEN-LAST:event_menuCancelamentoConsultaActionPerformed
-
-    private void menuCadastroFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastroFuncionariosActionPerformed
-        new CadastroFuncionarios().setVisible(true);
-    }//GEN-LAST:event_menuCadastroFuncionariosActionPerformed
-
-    private void menuCadastroUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastroUsuariosActionPerformed
-        new CadastroUsuarios().setVisible(true);
-    }//GEN-LAST:event_menuCadastroUsuariosActionPerformed
-
     private void menuCadastroEspecialidadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastroEspecialidadesActionPerformed
         new CadastroEspecialidade().setVisible(true);
     }//GEN-LAST:event_menuCadastroEspecialidadesActionPerformed
@@ -266,6 +236,10 @@ public class DoisAgendamento extends javax.swing.JFrame {
     private void coisa(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_coisa
         new Historico_do_paciente().setVisible(true);
     }//GEN-LAST:event_coisa
+
+    private void menuCadastroFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuCadastroFuncionariosActionPerformed
+        new CadastroFuncionarios().setVisible(true);
+    }//GEN-LAST:event_menuCadastroFuncionariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -317,8 +291,6 @@ public class DoisAgendamento extends javax.swing.JFrame {
     private javax.swing.JMenuItem menuCadastroFuncionarios;
     private javax.swing.JMenuItem menuCadastroMedicos;
     private javax.swing.JMenuItem menuCadastroPaciente;
-    private javax.swing.JMenuItem menuCadastroUsuarios;
-    private javax.swing.JMenuItem menuCancelamentoConsulta;
     private javax.swing.JMenuItem menuProntuarioPaciente;
     private javax.swing.JMenuItem menuRegistroRetorno;
     private javax.swing.JMenu txtAdministrativo;
